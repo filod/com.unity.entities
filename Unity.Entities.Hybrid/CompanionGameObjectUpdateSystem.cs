@@ -59,7 +59,6 @@ namespace Unity.Entities
 
     [WorldSystemFilter(WorldSystemFilterFlags.Default | WorldSystemFilterFlags.Editor)]
     [BurstCompile]
-    //[UpdateInGroup(typeof(SimulationSystemGroup), OrderFirst = true)]
     partial struct CompanionGameObjectUpdateSystem : ISystem
     {
         private EntityQuery companionChanged;
